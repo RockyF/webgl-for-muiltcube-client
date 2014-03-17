@@ -32,13 +32,13 @@ $(function () {
 	//console.log(cube)
 
 	var loader = new THREE.JSONLoader( true );
-	loader.load( "model/cube.json", function( geometry ) {
+	loader.load( "model/scene.js", function( geometry ) {
 		console.log(geometry);
 		cubeLoaded = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: 0x606060 } ) );
 		//cubeLoaded = geometry;
 		cubeLoaded.scale.set(50, 50, 50);
 		scene.add( cubeLoaded );
-		cubeLoaded.position.y = 200;
+		//cubeLoaded.position.y = 200;
 	} );
 
 	renderer = new THREE.WebGLRenderer({ clearColor: 0x222222, clearAlpha: 1, antialias: true });
@@ -97,7 +97,7 @@ function animate() {
 
 function render() {
 	if(cubeLoaded){
-		cubeLoaded.rotation.y += 0.01;
+		//cubeLoaded.rotation.y += 0.01;
 	}
 	//cube.position.x += (aimX - cube.position.x) * speed;
 	//cube.position.z += (aimY - cube.position.z) * speed;

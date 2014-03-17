@@ -1,7 +1,13 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="493b19ee-5fc0-4b2c-b1c5-3517b0d2489d" name="Default" comment="" />
+    <list default="true" id="493b19ee-5fc0-4b2c-b1c5-3517b0d2489d" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/model1.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/model/scene.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+    </list>
     <ignored path="webgl.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="TRACKING_ENABLED" value="true" />
@@ -67,7 +73,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="28" column="24" selection-start="898" selection-end="898" vertical-scroll-proportion="0.35408023" vertical-offset="192" max-vertical-offset="2064">
+            <state line="94" column="11" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.2022792" vertical-offset="1362" max-vertical-offset="2064">
               <folding />
             </state>
           </provider>
@@ -116,6 +122,9 @@
       <setting name="OPEN_NEW_TAB" value="false" />
     </FindUsagesManager>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
@@ -141,7 +150,7 @@
     <option name="width" value="1456" />
     <option name="height" value="886" />
   </component>
-  <component name="ProjectLevelVcsManager" settingsEditedManually="false">
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <OptionsSetting value="true" id="Add" />
     <OptionsSetting value="true" id="Remove" />
     <OptionsSetting value="true" id="Checkout" />
@@ -169,8 +178,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="PackagesPane" />
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -219,6 +226,8 @@
           </PATH>
         </subPane>
       </pane>
+      <pane id="Scope" />
+      <pane id="PackagesPane" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -392,6 +401,10 @@
       <option name="usbDebugPort" value="7936" />
       <method />
     </configuration>
+    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
+      <TestRunner />
+      <method />
+    </configuration>
     <configuration default="true" type="AndroidTestRunConfigurationType" factoryName="Android Tests">
       <module name="" />
       <option name="TESTING_TYPE" value="0" />
@@ -412,10 +425,6 @@
       <option name="SHOW_LOGCAT_AUTOMATICALLY" value="true" />
       <method />
     </configuration>
-    <configuration default="true" type="PHPUnitRunConfigurationType" factoryName="PHPUnit">
-      <TestRunner />
-      <method />
-    </configuration>
     <configuration default="true" type="FlexUnitRunConfigurationType" factoryName="FlexUnit" appDescriptorForEmulator="Android" class_name="" emulatorAdlOptions="" method_name="" output_log_level="null" package_name="" scope="Class">
       <option name="BCName" value="" />
       <option name="launcherParameters">
@@ -428,6 +437,30 @@
       </option>
       <option name="moduleName" value="" />
       <option name="trusted" value="true" />
+      <method />
+    </configuration>
+    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
+      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
+      <option name="myFilePath" />
+      <option name="GLUE" />
+      <option name="myNameFilter" />
+      <option name="myGeneratedName" />
+      <option name="MAIN_CLASS_NAME" />
+      <option name="VM_PARAMETERS" />
+      <option name="PROGRAM_PARAMETERS" />
+      <option name="WORKING_DIRECTORY" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="ENABLE_SWING_INSPECTOR" value="false" />
+      <option name="ENV_VARIABLES" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <module name="" />
+      <envs />
+      <method />
+    </configuration>
+    <configuration default="true" type="Cocos2dx-JS" factoryName="Cocos2dx-JS">
+      <option name="scriptType" value="Javascript" />
+      <browser start="false" url="" with-js-debugger="false" />
       <method />
     </configuration>
     <configuration default="true" type="GoTestConfiguration" factoryName="Go Test">
@@ -449,30 +482,6 @@
       <option name="testBeforeBenchmark" value="false" />
       <option name="goVetEnabled" value="false" />
       <module name="" />
-      <method />
-    </configuration>
-    <configuration default="true" type="Cocos2dx-JS" factoryName="Cocos2dx-JS">
-      <option name="scriptType" value="Javascript" />
-      <browser start="false" url="" with-js-debugger="false" />
-      <method />
-    </configuration>
-    <configuration default="true" type="CucumberJavaRunConfigurationType" factoryName="Cucumber java">
-      <extension name="coverage" enabled="false" merge="false" sample_coverage="true" runner="idea" />
-      <option name="myFilePath" />
-      <option name="GLUE" />
-      <option name="myNameFilter" />
-      <option name="myGeneratedName" />
-      <option name="MAIN_CLASS_NAME" />
-      <option name="VM_PARAMETERS" />
-      <option name="PROGRAM_PARAMETERS" />
-      <option name="WORKING_DIRECTORY" />
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="ENABLE_SWING_INSPECTOR" value="false" />
-      <option name="ENV_VARIABLES" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <module name="" />
-      <envs />
       <method />
     </configuration>
     <configuration default="true" type="Application" factoryName="Application">
@@ -541,16 +550,17 @@
       <updated>1394902636403</updated>
       <workItem from="1394902638158" duration="1998000" />
       <workItem from="1394937640251" duration="20852000" />
-      <workItem from="1394985892395" duration="19000" />
+      <workItem from="1394985892395" duration="639000" />
+      <workItem from="1395074367623" duration="1711000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="22869000" />
+    <option name="totallyTimeSpent" value="25200000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1456" height="886" extended-state="6" />
-    <editor active="true" />
+    <editor active="false" />
     <layout>
       <window_info id="Palette&#9;" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
@@ -571,10 +581,10 @@
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Maven Projects" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.116595134" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
+      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.116595134" sideWeight="0.5" order="3" side_tool="false" content_ui="combo" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Animations&#9;" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
-      <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="8" side_tool="false" content_ui="combo" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
@@ -599,6 +609,41 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
+    <entry file="file://$PROJECT_DIR$/main.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="37" column="28" selection-start="1214" selection-end="1214" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="2064">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://E:/Framework/html5/mrdoob-three.js/examples/webgl_morphtargets_horse.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="0" selection-start="1369" selection-end="1369" vertical-scroll-proportion="0.0" vertical-offset="737" max-vertical-offset="2432">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/cube.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="0" selection-start="301" selection-end="301" vertical-scroll-proportion="0.0" vertical-offset="272" max-vertical-offset="1120">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/model/horse.json">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="24" column="19" selection-start="8663" selection-end="8663" vertical-scroll-proportion="0.0" vertical-offset="384" max-vertical-offset="1760">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/show.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="20" selection-start="205" selection-end="205" vertical-scroll-proportion="0.0" vertical-offset="64" max-vertical-offset="448">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="24" selection-start="898" selection-end="898" vertical-scroll-proportion="0.0" vertical-offset="192" max-vertical-offset="2064">
@@ -643,7 +688,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cubetest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="61" column="0" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="976" max-vertical-offset="1840" />
+        <state line="61" column="0" selection-start="1387" selection-end="1387" vertical-scroll-proportion="0.0" vertical-offset="976" max-vertical-offset="1840">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/show.html">
@@ -660,7 +707,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/jquery-1.7.2-min.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="0" selection-start="94840" selection-end="94840" vertical-scroll-proportion="0.09315866" vertical-offset="0" max-vertical-offset="687" />
+        <state line="4" column="0" selection-start="94840" selection-end="94840" vertical-scroll-proportion="0.09315866" vertical-offset="0" max-vertical-offset="687">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://E:/Framework/html5/mrdoob-three.js/examples/canvas_geometry_cube.html">
@@ -670,7 +719,9 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/cubetest.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="47" column="20" selection-start="902" selection-end="902" vertical-scroll-proportion="1.071225" vertical-offset="0" max-vertical-offset="1840" />
+        <state line="47" column="20" selection-start="902" selection-end="902" vertical-scroll-proportion="1.071225" vertical-offset="0" max-vertical-offset="1840">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/show.html">
@@ -714,12 +765,16 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/libs/three.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="11497" column="0" selection-start="226674" selection-end="226674" vertical-scroll-proportion="0.0" vertical-offset="183691" max-vertical-offset="604256" />
+        <state line="11497" column="0" selection-start="226674" selection-end="226674" vertical-scroll-proportion="0.0" vertical-offset="183691" max-vertical-offset="604256">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/model/1001.json">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="1" selection-start="565" selection-end="565" vertical-scroll-proportion="0.24096386" vertical-offset="0" max-vertical-offset="664" />
+        <state line="10" column="1" selection-start="565" selection-end="565" vertical-scroll-proportion="0.24096386" vertical-offset="0" max-vertical-offset="664">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://E:/Framework/html5/mrdoob-three.js/examples/webgl_morphtargets_horse.html">
@@ -738,7 +793,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="24" selection-start="898" selection-end="898" vertical-scroll-proportion="0.35408023" vertical-offset="192" max-vertical-offset="2064">
+        <state line="94" column="11" selection-start="2650" selection-end="2650" vertical-scroll-proportion="0.2022792" vertical-offset="1362" max-vertical-offset="2064">
           <folding />
         </state>
       </provider>
