@@ -2,7 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="493b19ee-5fc0-4b2c-b1c5-3517b0d2489d" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/main.js" afterPath="$PROJECT_DIR$/main.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
     </list>
     <ignored path="webgl.iws" />
@@ -70,7 +69,7 @@
       <file leaf-file-name="main.js" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="99" column="36" selection-start="2725" selection-end="2725" vertical-scroll-proportion="0.15845071" vertical-offset="1494" max-vertical-offset="2080">
+            <state line="118" column="10" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.693662" vertical-offset="1494" max-vertical-offset="2080">
               <folding />
             </state>
           </provider>
@@ -509,12 +508,17 @@
       <workItem from="1394937640251" duration="20852000" />
       <workItem from="1394985892395" duration="639000" />
       <workItem from="1395074367623" duration="1711000" />
-      <workItem from="1395111733892" duration="7904000" />
+      <workItem from="1395111733892" duration="8931000" />
     </task>
+    <task id="LOCAL-00001" summary="gain the intersected point.">
+      <created>1395145920939</created>
+      <updated>1395145920939</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="33104000" />
+    <option name="totallyTimeSpent" value="34131000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1382" height="754" extended-state="6" />
@@ -533,6 +537,7 @@
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="IDEtalk" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="-1" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="13" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" weight="0.4" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -559,10 +564,13 @@
     <option name="myLimit" value="2678400000" />
   </component>
   <component name="VcsManagerConfiguration">
+    <option name="CHECK_CODE_SMELLS_BEFORE_PROJECT_COMMIT" value="false" />
+    <option name="CHECK_NEW_TODO" value="false" />
     <option name="myTodoPanelSettings">
       <TodoPanelSettings />
     </option>
-    <option name="LAST_COMMIT_MESSAGE" value="" />
+    <MESSAGE value="gain the intersected point." />
+    <option name="LAST_COMMIT_MESSAGE" value="gain the intersected point." />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager />
@@ -729,7 +737,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/main.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="99" column="36" selection-start="2725" selection-end="2725" vertical-scroll-proportion="0.15845071" vertical-offset="1494" max-vertical-offset="2080">
+        <state line="118" column="10" selection-start="3474" selection-end="3474" vertical-scroll-proportion="0.693662" vertical-offset="1494" max-vertical-offset="2080">
           <folding />
         </state>
       </provider>
