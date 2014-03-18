@@ -2,8 +2,9 @@ var windowHalfX, windowHalfY;
 var camera, scene, renderer, projector, raycaster;
 var cube;
 var mouse = new THREE.Vector2(), INTERSECTED;
-var aimX = 200, aimY = 200, speed = 0.01;
-var cubeLoaded;
+var aimX = 200, aimZ = 200, speed = 0.01;
+var ground;
+var movalbe = false;
 
 $(function () {
 	var container = document.createElement('div');
@@ -28,17 +29,16 @@ $(function () {
 	cube = new THREE.Mesh(geometry, material);
 	cube.position.y = 100;
 	cube.castShadow = true;
-	//scene.add(cube);
+	scene.add(cube);
 	//console.log(cube)
 
 	var loader = new THREE.JSONLoader( true );
 	loader.load( "model/scene.js", function( geometry ) {
 		console.log(geometry);
-		cubeLoaded = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: 0x606060 } ) );
-		//cubeLoaded = geometry;
-		cubeLoaded.scale.set(50, 50, 50);
-		scene.add( cubeLoaded );
-		//cubeLoaded.position.y = 200;
+		ground = new THREE.Mesh( geometry, new THREE.MeshLambertMaterial( { color: 0x606060 } ) );
+		ground.scale.set(50, 50, 50);
+		ground.receiveShadow = true;
+		scene.add( ground );
 	} );
 
 	renderer = new THREE.WebGLRenderer({ clearColor: 0x222222, clearAlpha: 1, antialias: true });
@@ -62,7 +62,7 @@ function onWindowResize() {
 	windowHalfX = window.innerWidth / 2;
 	windowHalfY = window.innerHeight / 2;
 
-	camera.position.z = 500;
+	camera.position.z = 1000;
 	//camera.position.x = 500;
 	camera.position.y = 500;
 	camera.rotation.x = -Math.PI / 6;
@@ -83,11 +83,19 @@ function onDocumentMouseMove(event) {
 function onDocumentMouseUp(event) {
 
 	event.preventDefault();
-
-	aimX = event.clientX;
-	aimY = event.clientY;
-
-	//console.log(aimX, aimY);
+	var vector = new THREE.Vector3(mouse.x, mouse.y, 1);
+	projector.unprojectVector(vector, camera);
+	raycaster.set(camera.position, vector.sub(camera.position).normalize());
+	var intersects = raycaster.intersectObjects(scene.children);
+	if (intersects.length > 0 && intersects[0].object == ground) {
+		aimX = intersects[0].point.x;
+		aimZ = intersects[0].point.z;
+		var dir = Math.atan((aimZ - cube.position.z) / (aimX - cube.position.x));
+		TweenLite(cube.rotation, 0.3, {y:dir, onComplete:function(){
+			TweenLite(cube.position, 1, {x:aimX, z:aimZ});
+		}});
+		movalbe = true;
+	}
 }
 
 function animate() {
@@ -96,30 +104,15 @@ function animate() {
 }
 
 function render() {
-	if(cubeLoaded){
-		//cubeLoaded.rotation.y += 0.01;
-	}
-	//cube.position.x += (aimX - cube.position.x) * speed;
-	//cube.position.z += (aimY - cube.position.z) * speed;
+	/*var cubeX = cube.position.x;
+	var cubeZ = cube.position.z;
+	if(Math.abs(aimX - cubeX) < 5 && Math.abs(aimZ - cubeZ)){
+		movalbe = false;
+	}else{
+		cube.position.x += (aimX - cubeX) * speed;
+		cube.position.z += (aimZ - cubeZ) * speed;
+	}*/
 
-	//console.log(aimX, aimY);
-
-	var vector = new THREE.Vector3(mouse.x, mouse.y, 1);
-	projector.unprojectVector(vector, camera);
-	raycaster.set(camera.position, vector.sub(camera.position).normalize());
-	var intersects = raycaster.intersectObjects(scene.children);
-	if (intersects.length > 0) {
-		if (INTERSECTED != intersects[ 0 ].object) {
-			if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-			INTERSECTED = intersects[ 0 ].object;
-			console.log(intersects[0].point);
-			INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
-			INTERSECTED.material.emissive.setHex(0xff0000);
-		}
-	} else {
-		if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
-		INTERSECTED = null;
-	}
 
 	renderer.render(scene, camera);
 }
