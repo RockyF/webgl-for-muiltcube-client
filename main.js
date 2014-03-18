@@ -112,6 +112,7 @@ function render() {
 		if (INTERSECTED != intersects[ 0 ].object) {
 			if (INTERSECTED) INTERSECTED.material.emissive.setHex(INTERSECTED.currentHex);
 			INTERSECTED = intersects[ 0 ].object;
+			console.log(intersects[0].point);
 			INTERSECTED.currentHex = INTERSECTED.material.emissive.getHex();
 			INTERSECTED.material.emissive.setHex(0xff0000);
 		}
